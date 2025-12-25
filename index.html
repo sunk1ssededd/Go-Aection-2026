@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA26 | Smart Generation 2026</title>
+    <link rel="stylesheet" href="/src/style.css">
+
+    <!-- PERBAIKAN DI SINI: Hapus tulisan /public -->
+    <link rel="icon" href="/logo-Go-Aection26.png" type="image/png">
+</head>
+
+<body>
+    <!-- //navbar -->
+    <!-- <nav id="navbar" class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-6 md:px-12">
+        <div
+            class="max-w-7xl mx-auto flex justify-between items-center bg-white/5 backdrop-blur-xl border border-white/10 p-4 md:p-2 rounded-2xl md:rounded-full">
+
+            <div class="flex items-center gap-3 pl-4">
+                <div
+                    class="w-8 h-8 bg-cyan-400 rounded-lg flex items-center justify-center font-black text-black italic text-sm">
+                    G</div>
+                <span class="font-bold tracking-tighter text-xl uppercase hidden sm:block">GO-AECTION <span
+                        class="text-cyan-400">26</span></span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-10 text-[10px] font-black uppercase tracking-[0.2em]">
+                <a href="#hero" class="nav-link text-white/50 hover:text-cyan-400 transition-all">Home</a>
+                <a href="#arena" class="nav-link text-white/50 hover:text-cyan-400 transition-all">Arena</a>
+                <a href="#showcase" class="nav-link text-white/50 hover:text-cyan-400 transition-all">Legacy</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button id="portal-btn"
+                    class="hidden sm:block text-[10px] font-bold uppercase tracking-widest text-white/70 hover:text-white transition-all">Portal
+                    Login</button>
+                <a href="#arena"
+                    class="btn-cyber-small px-6 py-2 bg-cyan-400 text-black text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-400/20">Join
+                    Revolution</a>
+
+                <button id="menu-hp-buka" class="md:hidden text-2xl pr-2">☰</button>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- MENU MOBILE OVERLAY (Muncul saat Klik Hamburger di HP) -->
+    <div id="menu-hp-overlay"
+        class="fixed inset-0 z-[110] bg-black translate-x-full transition-transform duration-500 p-10 flex flex-col justify-between md:hidden">
+        <div class="flex justify-between items-center">
+            <span class="font-black text-2xl tracking-tighter">GA26.</span>
+            <button id="menu-hp-tutup" class="text-4xl">✕</button>
+        </div>
+        <div class="flex flex-col gap-8 text-4xl font-black italic uppercase">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#arena" class="mobile-link">Arena</a>
+            <a href="#showcase" class="mobile-link text-cyan-400">Legacy</a>
+        </div>
+        <div class="border-t border-white/10 pt-6">
+            <p class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">SMK TI Bali Global Denpasar</p>
+        </div>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <main class="pl-20">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="h-screen flex flex-col justify-center px-10 md:px-20">
+            <h1 class="text-[12vw] font-black leading-none tracking-tighter italic uppercase">
+                SMART <br> <span class="text-lime-400">GEN.</span> <br> 2026
+            </h1>
+            <p class="max-w-md text-slate-500 uppercase text-[10px] tracking-[0.4em] mt-10">
+                // Digital Art Revolution SMK TI Bali Global Denpasar.
+            </p>
+        </section>
+
+        <!-- GRID LOMBA (Gaya Kolom) -->
+        <section id="arena" class="py-20 px-10 md:px-20 space-y-10">
+            <h2 class="text-4xl font-black italic border-b border-white/10 pb-6 mb-10">THE COMPETITIONS</h2>
+
+            <!-- GRID CONTAINER -->
+            <div class="grid grid-cols-1 gap-8">
+
+                <!-- 1. IT COMPETITION -->
+                <div class="kartu-lomba group">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f"
+                        class="absolute w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700">
+                    <div class="overlay-kartu"></div>
+                    <div class="konten-kartu">
+                        <div class="max-w-xl">
+                            <h3 class="text-3xl font-black italic mb-4 uppercase">Technology Mastery (IT)</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Microsoft Word, Excel, & PowerPoint Competition. Khusus tingkat SMP/MTS se-Bali.
+                                Buktikan kecerdasan digitalmu.
+                            </p>
+                        </div>
+                        <!-- Tombol Registrasi Langsung di Sini -->
+                        <button class="tombol-join buka-pendaftaran" data-lomba="Technology Mastery">
+                            JOIN <span class="text-3xl">→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. SUMOBOT -->
+                <div class="kartu-lomba group">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                        class="absolute w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700">
+                    <div class="overlay-kartu"></div>
+                    <div class="konten-kartu">
+                        <div class="max-w-xl">
+                            <h3 class="text-3xl font-black italic mb-4 uppercase italic">SUMOBOT COMPETITION</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Kategori UMUM. Adu strategi dan kekuatan robot dalam arena battle yang memacu adrenalin.
+                            </p>
+                        </div>
+                        <button class="tombol-join buka-pendaftaran" data-lomba="Sumobot">
+                            JOIN <span class="text-3xl">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. SUMOBOT -->
+            <div class="kartu-lomba group">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                    class="absolute w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700">
+                <div class="overlay-kartu"></div>
+                <div class="konten-kartu">
+                    <div class="max-w-xl">
+                        <h3 class="text-3xl font-black italic mb-4 uppercase italic">SUMOBOT COMPETITION</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Kategori UMUM. Adu strategi dan kekuatan robot dalam arena battle yang memacu adrenalin.
+                        </p>
+                    </div>
+                    <button class="tombol-join buka-pendaftaran" data-lomba="Sumobot">
+                        JOIN <span class="text-3xl">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. SUMOBOT -->
+            <div class="kartu-lomba group">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                    class="absolute w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700">
+                <div class="overlay-kartu"></div>
+                <div class="konten-kartu">
+                    <div class="max-w-xl">
+                        <h3 class="text-3xl font-black italic mb-4 uppercase italic">SUMOBOT COMPETITION</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Kategori UMUM. Adu strategi dan kekuatan robot dalam arena battle yang memacu adrenalin.
+                        </p>
+                    </div>
+                    <button class="tombol-join buka-pendaftaran" data-lomba="Sumobot">
+                        JOIN <span class="text-3xl">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. SUMOBOT -->
+            <div class="kartu-lomba group">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                    class="absolute w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700">
+                <div class="overlay-kartu"></div>
+                <div class="konten-kartu">
+                    <div class="max-w-xl">
+                        <h3 class="text-3xl font-black italic mb-4 uppercase italic">SUMOBOT COMPETITION</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Kategori UMUM. Adu strategi dan kekuatan robot dalam arena battle yang memacu adrenalin.
+                        </p>
+                    </div>
+                    <button class="tombol-join buka-pendaftaran" data-lomba="Sumobot">
+                        JOIN <span class="text-3xl">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. SUMOBOT -->
+            <div class="kartu-lomba group">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                    class="absolute w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700">
+                <div class="overlay-kartu"></div>
+                <div class="konten-kartu">
+                    <div class="max-w-xl">
+                        <h3 class="text-3xl font-black italic mb-4 uppercase italic">SUMOBOT COMPETITION</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Kategori UMUM. Adu strategi dan kekuatan robot dalam arena battle yang memacu adrenalin.
+                        </p>
+                    </div>
+                    <button class="tombol-join buka-pendaftaran" data-lomba="Sumobot">
+                        JOIN <span class="text-3xl">→</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PORTAL PENDAFTARAN (Muncul saat Join diklik) -->
+    <div id="modal-regis"
+        class="fixed inset-0 z-[200] bg-black/90 backdrop-blur-xl translate-y-full transition-transform duration-700 p-10 flex flex-col items-center justify-center">
+        <button id="tutup-regis" class="absolute top-10 right-10 text-4xl">✕</button>
+        <h2 class="text-4xl md:text-6xl font-black italic mb-10 text-lime-400 uppercase">Registration Form</h2>
+
+        <form class="w-full max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="border-b border-white/20 pb-4">
+                <label class="text-[10px] font-bold text-slate-500 uppercase">Selected Lomba</label>
+                <input type="text" id="nama-lomba-terpilih" readonly
+                    class="w-full bg-transparent text-xl font-bold text-cyan-400 outline-none">
+            </div>
+            <div class="border-b border-white/20 pb-4">
+                <label class="text-[10px] font-bold text-slate-500 uppercase">Full Name</label>
+                <input type="text" placeholder="TULIS NAMA..."
+                    class="w-full bg-transparent text-xl font-bold outline-none placeholder:text-white/10">
+            </div>
+            <button
+                class="md:col-span-2 py-6 bg-white text-black font-black uppercase italic text-xl hover:bg-lime-400 transition-all">
+                SUBMIT_DATA
+            </button>
+        </form>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

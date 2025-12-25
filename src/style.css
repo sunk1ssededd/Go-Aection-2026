@@ -1,0 +1,113 @@
+/* 1. SETUP TAILWIND */
+@import "tailwindcss";
+
+/* 2. FONT MODERN & TECHY */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;700;800&family=Syncopate:wght@700&display=swap');
+
+/* 3. SETTING DASAR DARK THEME */
+:root {
+  --lime: #a3e635; /* Warna Hijau Stabilo */
+  --cyan: #06b6d4; /* Warna Biru Tech */
+  --bg-gelap: #050505; /* Hitam Pekat */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-gelap);
+  color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* 4. NAVBAR KIRI (Sesuai Foto Kamu) */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #000000;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  z-index: 100;
+}
+
+/* Rotasi teks GA26 */
+.logo-vertikal {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  transform: rotate(-90deg);
+  letter-spacing: -1px;
+}
+
+/* Navigasi Link Vertikal */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* Jarak antar menu */
+}
+
+.nav-item {
+  transform: rotate(-90deg);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #666;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  color: var(--lime);
+}
+
+/* 5. KARTU LOMBA (Gaya ITCC) */
+.kartu-lomba {
+  position: relative;
+  height: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.5s ease;
+}
+
+/* Overlay Gelap di atas Gambar */
+.overlay-kartu {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(5, 5, 5, 0.9) 30%, rgba(5, 5, 5, 0.2));
+  z-index: 10;
+}
+
+.konten-kartu {
+  position: absolute;
+  z-index: 20;
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tombol-join {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  color: white;
+  align-self: flex-end; /* Di pojok kanan bawah */
+}
+
+.tombol-join:hover {
+  color: var(--cyan);
+}
+
